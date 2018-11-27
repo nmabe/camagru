@@ -1,0 +1,132 @@
+article{
+    width: 85.5%;
+}
+
+.btn{
+    display: block; 
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.btn-dark {
+    background: #333;
+    color: #fff;
+    border: #666 1px solid;
+}
+
+.btn-light{
+    background: #f4f4f4;
+    color: #333;
+    border: #ccc 1px solid;
+    margin-bottom: 1px;
+}
+
+select {
+    height: 40px;
+    background: #333;
+    color: #fff;
+    padding: 3px;
+    width: 100%;
+    border: 1px #666 solid;
+    margin-bottom: 10px;
+}
+
+/*Create two Column boxes that flow next to each other*/
+
+video{
+    border-radius: 13% 13% 0 0;
+}
+
+.top-container{
+    margin: 30px auto;
+    border: 3px grey solid;
+    border-radius: 13% 13% 0 0;
+}
+
+/* Clear floats after Column*/
+
+.gallery-container > .gallery-element{
+    padding: 0 8px;
+}
+
+.gallery-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gallery-element{
+    float: left;
+    width: 25%;
+}
+
+.gallery-container--fill{
+    grid-template-columns: repeat( 3, 1fr);
+    border: #666 double 1px;
+    height: 100%;
+}
+
+.gallery-container img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+
+.gallery-element img{
+    margin: 20px;
+    background-color: slategrey;
+    padding: 3px;
+    color: #fff;
+    filter: grayscale(100%);
+    transform: 1s;
+}
+
+video{
+    margin-top: auto;
+}
+
+.caption-container{
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.bottom-container{
+    margin: auto;
+    padding: 10px;
+}
+
+#photos
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#photos img {
+    border: 3px #fff solid;
+}
+
+.vertical-menu {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #666;
+    color: white;
+}
